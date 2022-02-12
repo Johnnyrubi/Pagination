@@ -7,7 +7,7 @@ Abaixo irei ensinar como rodar este projeto em sua propria maquina, para que voc
 1 - Clone o Repositorio
 
 ~~~
-    https://personal-jdln7y76.outsystemscloud.com/VagasTI/Vagas
+    git@github.com:Johnnyrubi/Pagination.git
 ~~~
 
 2 - Entre na pasta do repositório que você acabou de clonar e Instale as dependências 
