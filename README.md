@@ -7,7 +7,7 @@ Abaixo irei ensinar como rodar este projeto em sua propria maquina, para que voc
 1 - Clone o Repositorio
 
 ~~~
-    git@github.com:Johnnyrubi/Pagination.git
+    git clone git@github.com:Johnnyrubi/Pagination.git
 ~~~
 
 2 - Entre na pasta do repositório que você acabou de clonar e Instale as dependências 
