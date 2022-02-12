@@ -33,14 +33,14 @@ Abaixo irei ensinar como rodar este projeto em sua propria maquina, para que voc
 4 - Abra o navegador e digite a seguinte rota,
     **Lembrete se a rota estiver errada não há como passar os valores para a função**
 ~~~
-    http://localhost:3000/pagination/?page=x$pageSize=y
+    http://localhost:3000/pagination/?page=x&pageSize=y
 ~~~
 **x é o valor de page, y é o valor de pageSize**
 
 5 - Agora é necessario escrever as coisas da seguinte maneira!
                     **muita atenção**
 ~~~
-    /?page=x$pageSize=y
+    /?page=x&pageSize=y
 ~~~
 
 **Page recebe  o primeiro parametro, sendo o numero que você gostaria de ver em negrito!**
@@ -48,7 +48,7 @@ Abaixo irei ensinar como rodar este projeto em sua propria maquina, para que voc
 se vocẽ quiser passar o numero 1 como primeiro parametro e 10 como segundo parametro você escreveria da seguinte maneira:
 
 ~~~
-    /?page=1$pageSize=10
+    /?page=1&pageSize=10
 ~~~
 
 **Retorno esperado:**
