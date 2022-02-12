@@ -1,4 +1,4 @@
-const validationPages = require("../utils/validation");
+const { validationPages }  = require("../utils/validation");
 const pagination = require("../logic");
 
 const serviceController = ({page, pageSize}) => {
