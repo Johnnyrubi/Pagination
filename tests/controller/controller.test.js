@@ -1,8 +1,6 @@
 const controllerPagination = require("../../src/controller");
-const servicePagination = require("../../src/service");
 
-test('', () => {
-    const mock = jest.fn().mockReturnValue(["**1**", "2", "3"])
-    const response = 
-    expect(controllerPagination().tobe)
+test('test if controllerPagination return a correct value', () => {
+    const controllerPagination = jest.fn().mockReturnValue(["**1**", "2", "3"])
+    expect(controllerPagination()).toEqual(["**1**", "2", "3"])
 })
