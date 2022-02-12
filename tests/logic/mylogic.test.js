@@ -38,7 +38,7 @@ test('test if pagination return an array with five elements', () => {
     expect(pagination(4, 10)).toEqual(expected);
   })
 
-  test('return an array with "..." in the begging, and not in the end if Pages = TotalPages - 3', () => {
+  test('return an array with "..." in the begging, and not in the end if Pages >= 4', () => {
     const expected = ['...', "6", "7", "**8**", "9", "10"]
     expect(pagination(8, 10)).toEqual(expected);
   })
