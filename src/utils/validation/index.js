@@ -3,14 +3,14 @@ const err = ({ statusCode, message }) => ({
     message,
 });
 
-const ifExists = (pageNumber, pageSizeNumber) => {
-    if (!pageNumber || !pageSizeNumber) {
+const ifExists = (page, pageSize) => {
+    if (!page || !pageSize) {
         throw err({ statusCode: 400, message: "You must to write a value"});
     }
 };
 
-const ifAreNumber = (pageNumber, pageSizeNumber) => {
-    if (typeof(pageNumber) !== 'number' || typeof(pageSizeNumber) !== 'number') {
+const ifAreNumber = (page, pageSize) => {
+    if (isNaN(page) || isNaN(pageSize)) {
         throw err ({ statusCode: 400, message: "Parametres must be a Number"});
     }
 };
@@ -35,9 +35,9 @@ const ifAreHigherThanOne = (pageNumber, pageSizeNumber) => {
 
 const validationPages = (page, pageSize) => {
     ifExists(page, pageSize);
+    ifAreNumber(page, pageSize);
     const pageNumber = Number(page);
     const pageSizeNumber = Number(pageSize);
-    ifAreNumber(pageNumber, pageSizeNumber);
     ifArePositive(pageNumber, pageSizeNumber);
     ifPageAreHigher(pageNumber, pageSizeNumber);
     ifAreHigherThanOne(pageNumber, pageSizeNumber);
@@ -52,3 +52,4 @@ module.exports = {
     ifPageAreHigher,
     ifAreHigherThanOne
 };
+
