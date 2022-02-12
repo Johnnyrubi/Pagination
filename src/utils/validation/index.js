@@ -16,8 +16,8 @@ const ifAreNumber = (pageNumber, pageSizeNumber) => {
 };
 
 const ifArePositive = (pageNumber, pageSizeNumber) => {
-    if (pageNumber < 0 || pageSizeNumber < 0) {
-        throw err ({ statusCode: 400, message: "Page must be a positive number and Page Size must be higher than"});
+    if (pageNumber <= 0 || pageSizeNumber <= 0) {
+        throw err ({ statusCode: 400, message: "Page and Page Size must be a positive number"});
     }
 };
 
@@ -29,7 +29,7 @@ const ifPageAreHigher = (pageNumber, pageSizeNumber) => {
 
 const ifAreHigherThanOne = (pageNumber, pageSizeNumber) => {
     if (pageNumber <= 0 || pageSizeNumber < 1) {
-        throw err ({statusCode: 400, message: "The Page and Page Size must be higher than 1"})
+        throw err ({statusCode: 400, message: "The Page and Page Size must be higher than One"})
     }
 }
 
@@ -43,6 +43,14 @@ const validationPages = (page, pageSize) => {
     ifAreHigherThanOne(pageNumber, pageSizeNumber);
 }
 
-module.exports = validationPages
+module.exports = {
+    ifExists,
+    validationPages,
+    ifPageAreHigher,
+    ifAreNumber,
+    ifArePositive,
+    ifPageAreHigher,
+    ifAreHigherThanOne
+};
 
     // if (page < 1 || page > pageSize || pageSize < 1) throw err({ statusCode: 400, message: "Erro nos parametros"});
