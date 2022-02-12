@@ -67,4 +67,4 @@ const pagination = (page, pageSize) => {
     return treePointsEndandInit(page);
 };
 
-module.exports = pagination
+module.exports = pagination;

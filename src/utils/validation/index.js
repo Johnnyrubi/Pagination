@@ -29,9 +29,9 @@ const ifPageAreHigher = (pageNumber, pageSizeNumber) => {
 
 const ifAreHigherThanOne = (pageNumber, pageSizeNumber) => {
     if (pageNumber <= 0 || pageSizeNumber < 1) {
-        throw err ({statusCode: 400, message: "The Page and Page Size must be higher than One"})
+        throw err ({statusCode: 400, message: "The Page and Page Size must be higher than One"});
     }
-}
+};
 
 const validationPages = (page, pageSize) => {
     ifExists(page, pageSize);
@@ -41,7 +41,7 @@ const validationPages = (page, pageSize) => {
     ifArePositive(pageNumber, pageSizeNumber);
     ifPageAreHigher(pageNumber, pageSizeNumber);
     ifAreHigherThanOne(pageNumber, pageSizeNumber);
-}
+};
 
 module.exports = {
     ifExists,
