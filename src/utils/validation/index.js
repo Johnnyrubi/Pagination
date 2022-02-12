@@ -52,5 +52,3 @@ module.exports = {
     ifPageAreHigher,
     ifAreHigherThanOne
 };
-
-    // if (page < 1 || page > pageSize || pageSize < 1) throw err({ statusCode: 400, message: "Erro nos parametros"});

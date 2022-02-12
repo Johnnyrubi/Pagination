@@ -6,4 +6,3 @@ const controllerPagination = (req, res) => {
 }
 
 module.exports = controllerPagination;
-
