@@ -1,12 +1,9 @@
-const servicePagination = require('');
-const Pagination = require('');
+const servicePagination = require('../service');
 
 const controllerPagination = (req, res) => {
-    servicePagination(req);
-
-    const data = Pagination(req);
-
+    const data = servicePagination(req.query);
     return res.status(200).json(data);
 }
 
 module.exports = controllerPagination;
+
