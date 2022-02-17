@@ -1,4 +1,4 @@
-# Boas Vindas ao Projeto Desafio da Raro Labs!
+# Boas Vindas ao Projeto Pagination
 
 Abaixo irei ensinar como rodar este projeto em sua propria maquina, para que você mesmo possa testa-lo ou modifca-lo como quiser!
 
